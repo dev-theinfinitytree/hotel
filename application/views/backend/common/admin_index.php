@@ -1,0 +1,10 @@
+<?php
+$this->load->view('backend/common/header');
+$this->load->view('backend/common/header_menu');
+$this->load->view('backend/common/side_menu_admin');
+$this->load->view('backend/common/customizer');
+$this->load->view($page);
+$this->load->view('backend/common/quick_sidebar');
+$this->load->view('backend/common/footer_text');
+$this->load->view('backend/common/footer');
+?>

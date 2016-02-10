@@ -1,0 +1,72 @@
+ $form = array(
+                                                   'class' 			=> 'form-horizontal',
+                                                   'id'				=> 'form',
+												   'method'			=> 'post'
+                                                );
+										
+										$hotel_id = array(
+                                                  'type'			=> 'hidden',
+												  'class'			=> 'form-control input-circle-right',
+                                                  'name'       	 	=> 'hotel_id',
+												  'value'			=> $hotel_id
+                                                );
+										
+                                        $floor_no = array(
+                                                  'type'			=> 'text',
+												  'class'			=> 'form-control input-circle-right',
+                                                  'name'       	 	=> 'floor_no',
+                                                  'placeholder' 	=> 'Floor Number',
+												  'maxlength'       =>  '3',
+												  'required'		=> 'required',
+												  'onkeypress'		=> 'return onlyNos(event,this)',
+                                                );
+                                                
+                                        $room_no = array(
+												  'type'			=> 'text',
+												  'class'			=> 'form-control input-circle-right',
+                                                  'name'       	 	=> 'room_no',
+                                                  'placeholder' 	=> 'Room Number',
+												  'required'		=> 'required',
+												  'onkeypress'		=> 'return onlyNos(event,this)'
+                                                );
+												
+										$room_bed = array(
+                                                  'type'			=> 'text',
+												  'class'			=> 'form-control input-circle-right',
+                                                  'name'       	 	=> 'room_bed',
+                                                  'placeholder' 	=> 'Bed Number',
+												  'maxlength'       => '1',
+												  'required'		=> 'required',
+												  'onkeypress'		=> 'return onlyNos(event,this);',
+                                                );
+														
+										$ac_availability = array(
+												''					=> '--Select Room Type--',
+												'AC'				=> 'AC Room',
+												'NON-AC'			=> 'Non-AC Room'
+												);
+										$js = 'class="form-control input-circle-right"';	
+										
+                                        $submit = array(
+                                                  'class'			=> 'btn btn-circle blue',
+                                                  'value'			=> 'Submit'
+                                                );
+										$reset = array(
+                                                  'name' 			=> 'reset',
+												  'id'				=> 'reset',
+												  'value' 			=> 'true',
+												  'type' 			=> 'reset',
+												  'content' 		=> 'Reset',
+												  'class'			=> 'btn btn-circle red',
+                                                );
+												
+										$room_rent = array(
+                                                  'type'			=> 'text',
+												  'class'			=> 'form-control input-circle-right',
+                                                  'name'       	 	=> 'room_rent',
+                                                  'placeholder' 	=> 'Room Rent',
+												  'required'		=> 'required',
+												  'onkeypress'		=> 'return onlyNos(event,this);',
+                                                );
+										
+										echo form_open_multipart('dashboard/add_room',$form);

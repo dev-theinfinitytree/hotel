@@ -1,0 +1,54 @@
+/* Copyright Greg Sidelnikov 2013
+   http://www.learnjquery.org/plugin/jqWolfer
+   Note: you can use it in your own projects,
+         Please link back to:
+             <a href = "http://www.learnjquery.org/tutorials/" title = "jQuery and JavaScript tutorials">Greg's jQuery tutorials</a>
+         From anywhere on your website. Thank you~
+*/
+body { margin: 0; padding: 0 }
+.jqWolferContainer, .jqWolferView {
+     display: none;
+    position: fixed;
+         top: 0;
+        left: 0;
+       width: 100%;
+      height: 100%;
+     padding: 0 !important;
+      margin: 0 !important;
+ background-color: black;
+     opacity: 0.8;
+      filter: alpha(opacity = 80);
+      z-index:2147483645;
+
+      }
+.jqWolferView { display: none; background: transparent; opacity: 1; filter: alpha(opacity = 80); }
+.jqWolferView #jqWolferMsg span { font-family: Arial, sans-serif; font-size: 12px; color: gray; }
+.jqWolferView #jqWolferMsg #wf1 { font-weight: bold !important; margin-bottom: 7px; color: #999999; }
+.jqWolferView #jqWolferMsg #wf2 { margin-bottom: 7px; font-family: Arial, sans-serif; border:0; width: 100%; height: auto; background: transparent; color: gray; outline: none }
+.jqWolferView #jqWolferMsg #wf3 { border: 0; text-align: center; }
+.jqWolferView #jqWolferMsg {
+     position: relative;
+       margin: 0 auto;
+        width: 320px;
+       height: auto;
+   background-color: black !important;
+        color: white;
+      z-index: 2147483647;
+      opacity: 0.8;
+       filter: alpha(opacity = 80);
+
+        /* rounded corners, shadow effects, etc. */
+        -moz-border-radius: 7px; -webkit-border-radius: 7px; -khtml-border-radius: 7px; border-radius: 7px;
+        -webkit-box-shadow:  0px 0px 17px 7px rgba(0, 0, 0, 0.3); box-shadow:  0px 0px 17px 7px rgba(0, 0, 0, 0.3);
+
+}
+.jqWolferView div#jqWolferMsg span { display:block; }
+.jqWolferView div#jqWolferMsg
+{
+    position: relative;
+    padding: 16px;
+    text-align: left;
+}
+.jqWolferView div#jqWolferView { text-align: left; margin: 0 auto; }
+.jqWolferView div#icon { padding: 8px; margin: 0; width: 32px; height: 32px; float: left; background: url('wolfer-ic.png') no-repeat; }
+div#jsWolferCloseButton { cursor: pointer; position: absolute; padding:0; top: 10px; right:10px; width: 20px; height:19px; background: url('close-button.png') no-repeat; }

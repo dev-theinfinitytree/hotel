@@ -1,0 +1,334 @@
+<div id="rule_entry">
+
+    <h3 class="block">Preference Rule Create </h3>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Rule Name<span class="required">* </span></label>
+        <div class="col-md-4">
+            <input type="text" class="form-control" name="r_name"  />
+            <span class="help-block">Enter Rule Name... </span>
+        </div>
+        <label class="control-label col-md-2">Rule Apply For<span class="required">* </span></label>
+        <div class="col-md-4">
+            <input type="text" class="form-control" name="r_apply_person" />
+            <span class="help-block">Enter The Person Name... </span>
+        </div>
+        <label class="control-label col-md-2">Rule for Hotel <span class="required">* </span></label>
+        <div class="col-md-4">
+            <select class="form-control"  name="r_apply hotel" >
+                <option  value="0">All</option>
+                <?php
+                                                $hotels = $this->dashboard_model->total_hotels();
+                foreach($hotels as $hot):
+                ?>
+                <option  value="<?php echo $hot->hotel_id; ?>"><?php echo $hot->hotel_name; ?></option>
+                <?php endforeach; ?>
+
+            </select>
+            <span class="help-block">Enter Name of the hotel...</span>
+        </div>
+    </div>
+
+
+    <h3 class="block">Preference Rule Create for Guest </h3>
+    <div id="guest_container">
+        <div class="form-group" id="guest">
+            <label class="control-label col-md-2">Guest Name<span class="required">* </span></label>
+            <div class="col-md-4">
+                <input type="text" class="form-control" name="r_guest_name"  />
+                <span class="help-block">Enter Guest Name... </span>
+            </div>
+            <label class="control-label col-md-2">Guest Gender <span class="required">* </span></label>
+            <div class="col-md-4">
+                <select class="form-control"  name="r_guest_gender" >
+                    <option  value=""> N/A </option>
+                    <option  value="male"> Male </option>
+                    <option  value="female"> Female </option>
+
+
+
+                </select>
+                <span class="help-block">Enter Gender...</span>
+            </div>
+            <label class="control-label col-md-2">Guest Age <span class="required">* </span></label>
+            <div class="col-md-4">
+                <select class="form-control"  name="r_guest_age_op" >
+                    <option  value="0"> ">" </option>
+                    <option  value="1"> "<" </option>
+                    <option  value="2"> "=" </option>
+                    <option  value="3"> ">=" </option>
+                    <option  value="4"> "<=" </option>
+
+
+                </select>
+                <span class="help-block">Enter Relation...</span>
+                <input type="text" class="form-control" name="r_guest_age"  />
+                <span class="help-block">Enter Guest Age...</span>
+            </div>
+            <label class="control-label col-md-2">Guest Type<span class="required">* </span></label>
+            <div class="col-md-4">
+                <input type="text" class="form-control" name="r_guest_type" />
+                <span class="help-block">Enter The Guest Type... </span>
+            </div>
+            <label class="control-label col-md-2">Guest Country<span class="required">* </span></label>
+            <div class="col-md-4">
+                <input type="text" class="form-control" name="r_guest_country" />
+                <span class="help-block">Enter The Guest Country... </span>
+            </div>
+            <label class="control-label col-md-2">Guest State<span class="required">* </span></label>
+            <div class="col-md-4">
+                <input type="text" class="form-control" name="r_guest_state"  />
+                <span class="help-block">Enter The Guest State... </span>
+            </div>
+            <label class="control-label col-md-2">Guest Visit Count<span class="required">* </span></label>
+            <div class="col-md-4">
+                <select class="form-control"  name="r_guest_visit_count_op" >
+                    <option  value="0"> ">" </option>
+                    <option  value="1"> "<" </option>
+                    <option  value="2"> "=" </option>
+                    <option  value="3"> ">=" </option>
+                    <option  value="4"> "<=" </option>
+
+
+                </select>
+
+                <input type="text" class="form-control" name="r_guest_visit_count"  />
+                <span class="help-block">Enter The Guest Visit Count... </span>
+
+            </div>
+            <label class="control-label col-md-2">Guest Total Spent<span class="required">* </span></label>
+            <div class="col-md-4">
+                <select class="form-control"  name="r_guest_spent_op" >
+                    <option  value="0"> ">" </option>
+                    <option  value="1"> "<" </option>
+                    <option  value="2"> "=" </option>
+                    <option  value="3"> ">=" </option>
+                    <option  value="4"> "<=" </option>
+
+
+                </select>
+                <input type="text" class="form-control" name="r_guest_spent"  />
+                <span class="help-block">Enter The Guest Total Spent... </span>
+            </div>
+            <label class="control-label col-md-2">VIP ? <span class="required">* </span></label>
+            <div class="col-md-4">
+                <select class="form-control"  name="r_guest_vip" >
+                    <option  value="0" selected> No </option>
+                    <option  value="1"> Yes </option>
+
+
+
+                </select>
+            </div>
+            <label class="control-label col-md-2">PREFERRED ? <span class="required">* </span></label>
+            <div class="col-md-4">
+                <select class="form-control"  name="r_guest_preffered" >
+                    <option  value="0" selected> No </option>
+                    <option  value="1"> Yes </option>
+
+
+
+                </select>
+            </div>
+
+            <label class="control-label col-md-2">New Guest ? <span class="required">* </span></label>
+
+            <div class="col-md-4">
+                <select class="form-control"  name="r_guest_new" >
+                    <option  value="0" selected> No </option>
+                    <option  value="1"> Yes </option>
+
+
+
+                </select>
+
+
+            </div>
+        </div>
+
+    </div>
+    <h3 class="block">Preference Rule Create for Room and Booking </h3>
+    <div id="guest_container">
+        <div class="form-group" id="guest">
+            <label class="control-label col-md-2">Room Number<span class="required">* </span></label>
+            <div class="col-md-4">
+                <input type="text" class="form-control" name="r_room_no" />
+                <span class="help-block">Enter Room Number... </span>
+            </div>
+            <label class="control-label col-md-2">Number of Bedr<span class="required">* </span></label>
+            <div class="col-md-4">
+                <input type="text" class="form-control" name="r_room_bed"  />
+                <span class="help-block">Enter Number of Bed in Room... </span>
+            </div>
+            <label class="control-label col-md-2">Room Floor<span class="required">* </span></label>
+            <div class="col-md-4">
+                <input type="text" class="form-control" name="r_room_floor"  />
+                <span class="help-block">Enter the Floor Number... </span>
+            </div>
+            <label class="control-label col-md-2">Room Category <span class="required">* </span></label>
+            <div class="col-md-4">
+                <select class="form-control"  name="r_room_category" >
+                    <option  value="0" disabled> N/A </option>
+
+
+
+                </select>
+                <span class="help-block">Enter Room Gategory...</span>
+            </div>
+            <label class="control-label col-md-2">Booking From Date<span class="required">* </span></label>
+            <div class="col-md-4">
+                <input type="text" class="form-control " name="r_booking_from"  />
+                <span class="help-block">Enter Booking From Date... </span>
+            </div>
+            <label class="control-label col-md-2">Booking To Date<span class="required">* </span></label>
+            <div class="col-md-4">
+                <input type="text" class="form-control" name="r_booking_to"  />
+                <span class="help-block">Enter Booking To Date... </span>
+            </div>
+
+            <label class="control-label col-md-2">Number of Guest<span class="required">* </span></label>
+            <div class="col-md-4">
+                <select class="form-control"  name="r_booking_no_guest_op" >
+                    <option  value="0"> ">" </option>
+                    <option  value="1"> "<" </option>
+                    <option  value="2"> "=" </option>
+                    <option  value="3"> ">=" </option>
+                    <option  value="4"> "<=" </option>
+
+
+                </select>
+
+                <input type="text" class="form-control" name="r_booking_no_guest"  />
+                <span class="help-block">Enter The Number of Guest... </span>
+
+            </div>
+            <label class="control-label col-md-2">Nature of Visit <span class="required">* </span></label>
+
+            <div class="col-md-4">
+                <select class="form-control"  name="r_booking_nature_visit" >
+                    <option   selected> ---Nature of Visit--- </option>
+                    <option  value="bussiness" > Bussiness </option>
+                    <option  value="Travel and Leisure"> Travel and Leisure </option>
+
+
+
+                </select>
+
+
+            </div>
+            <label class="control-label col-md-2">Booking Source<span class="required">* </span></label>
+
+            <div class="col-md-4">
+                <select class="form-control"  name="r_booking_source" >
+                    <option   selected> ---Booking Source --- </option>
+                    <option  value="frontdesk" > Frontdesk </option>
+                    <option  value="online"> Online </option>
+                    <option  value="telephonic"> Telephonic </option>
+                    <option  value="broker"> Broker </option>
+                    <option  value="channel"> Channel </option>
+                </select>
+
+
+            </div>
+            <label class="control-label col-md-2">Is Applied For Today?<span class="required">* </span></label>
+
+            <div class="col-md-4">
+                <select class="form-control"  name="r_system_date" >
+                    <option  value="0" selected> No </option>
+                    <option  value="1"> Yes </option>
+
+                </select>
+
+
+            </div>
+            <label class="control-label col-md-2">Stay Days<span class="required">* </span></label>
+            <div class="col-md-4">
+                <select class="form-control"  name="r_booking_stay_days_op" >
+                    <option  value="0"> ">" </option>
+                    <option  value="1"> "<" </option>
+                    <option  value="2"> "=" </option>
+                    <option  value="3"> ">=" </option>
+                    <option  value="4"> "<=" </option>
+
+
+                </select>
+
+                <input type="text" class="form-control" name="r_booking_stay_days"d />
+                <span class="help-block">Enter The Stay Days... </span>
+
+            </div>
+            <label class="control-label col-md-2">Total Booking Amount<span class="required">* </span></label>
+            <div class="col-md-4">
+                <select class="form-control"  name="r_booking_total_op" >
+                    <option  value="0"> ">" </option>
+                    <option  value="1"> "<" </option>
+                    <option  value="2"> "=" </option>
+                    <option  value="3"> ">=" </option>
+                    <option  value="4"> "<=" </option>
+
+
+                </select>
+
+                <input type="text" class="form-control" name="r_booking_total" />
+                <span class="help-block">Total Booking Amount... </span>
+
+            </div>
+            <label class="control-label col-md-2">Guest Total Spent<span class="required">* </span></label>
+            <div class="col-md-4">
+                <select class="form-control"  name="r_guest_spent_op" >
+                    <option  value="0"> ">" </option>
+                    <option  value="1"> "<" </option>
+                    <option  value="2"> "=" </option>
+                    <option  value="3"> ">=" </option>
+                    <option  value="4"> "<=" </option>
+
+
+                </select>
+                <input type="text" class="form-control" name="r_guest_spent" />
+                <span class="help-block">Enter The Guest Total Spent... </span>
+            </div>
+            <label class="control-label col-md-2">VIP ? <span class="required">* </span></label>
+            <div class="col-md-4">
+                <select class="form-control"  name="r_guest_vip" >
+                    <option  value="0" selected> No </option>
+                    <option  value="1"> Yes </option>
+
+
+
+                </select>
+            </div>
+            <label class="control-label col-md-2">PREFERRED ? <span class="required">* </span></label>
+            <div class="col-md-4">
+                <select class="form-control"  name="r_guest_preffered" >
+                    <option  value="0" selected> No </option>
+                    <option  value="1"> Yes </option>
+
+
+
+                </select>
+            </div>
+
+            <label class="control-label col-md-2">New Guest ? <span class="required">* </span></label>
+
+            <div class="col-md-4">
+                <select class="form-control"  name="r_guest_new">
+                    <option  value="0" selected> No </option>
+                    <option  value="1"> Yes </option>
+
+
+
+                </select>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id='hd' >
+        <button onclick="save_rule()" id="save_rule_btn" type="button" class="btn green pull-right" style="margin-top:15px;margin-bottom:15px;" >Save</button>
+        <button onclick="add_row()" id="another_rule_btn" type="button" class="btn red pull-right" style="margin-top:15px;margin-bottom:15px; display: none;" >Add Another Rule</button>
+        <button class="btn blue pull-right" onclick="" style="margin-top:15px;margin-bottom:15px; margin-right:10px" type="button">Cancel</button>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+[16-Sep-2015 20:43:09 Etc/GMT] PHP Fatal error:  Call to a member function display_admin() on a non-object in /home/thein6er/public_html/hotelobjects_dev/application/controllers/Bookings.php on line 48
+[16-Sep-2015 20:44:21 Etc/GMT] PHP Fatal error:  Call to a member function display_admin() on a non-object in /home/thein6er/public_html/hotelobjects_dev/application/controllers/Bookings.php on line 48
+[16-Sep-2015 20:44:44 Etc/GMT] PHP Fatal error:  Call to a member function display_admin() on a non-object in /home/thein6er/public_html/hotelobjects_dev/application/controllers/Bookings.php on line 48
+[16-Sep-2015 20:45:00 Etc/GMT] PHP Fatal error:  Call to a member function display_admin() on a non-object in /home/thein6er/public_html/hotelobjects_dev/application/controllers/Bookings.php on line 48
+[16-Sep-2015 20:45:05 Etc/GMT] PHP Fatal error:  Call to a member function display_admin() on a non-object in /home/thein6er/public_html/hotelobjects_dev/application/controllers/Bookings.php on line 48
+[16-Sep-2015 20:46:26 Etc/GMT] PHP Fatal error:  Call to a member function display_admin() on a non-object in /home/thein6er/public_html/hotelobjects_dev/application/controllers/Bookings.php on line 48
+[16-Sep-2015 20:46:30 Etc/GMT] PHP Fatal error:  Call to a member function display_admin() on a non-object in /home/thein6er/public_html/hotelobjects_dev/application/controllers/Bookings.php on line 48
+[16-Sep-2015 20:48:13 Etc/GMT] PHP Fatal error:  Call to a member function display_admin() on a non-object in /home/thein6er/public_html/hotelobjects_dev/application/controllers/Bookings.php on line 48
+[16-Sep-2015 20:49:12 Etc/GMT] PHP Fatal error:  Call to a member function display_admin() on a non-object in /home/thein6er/public_html/hotelobjects_dev/application/controllers/Bookings.php on line 48
+[16-Sep-2015 20:49:17 Etc/GMT] PHP Fatal error:  Call to a member function display_admin() on a non-object in /home/thein6er/public_html/hotelobjects_dev/application/controllers/Bookings.php on line 48
+[16-Sep-2015 20:50:02 Etc/GMT] PHP Fatal error:  Call to a member function display_admin() on a non-object in /home/thein6er/public_html/hotelobjects_dev/application/controllers/Bookings.php on line 48
+[16-Sep-2015 20:50:29 Etc/GMT] PHP Fatal error:  Call to a member function display_admin() on a non-object in /home/thein6er/public_html/hotelobjects_dev/application/controllers/Bookings.php on line 48
+[16-Sep-2015 20:51:46 Etc/GMT] PHP Fatal error:  Call to a member function display_admin() on a non-object in /home/thein6er/public_html/hotelobjects_dev/application/controllers/Bookings.php on line 48
+[16-Sep-2015 20:51:51 Etc/GMT] PHP Fatal error:  Call to a member function display_admin() on a non-object in /home/thein6er/public_html/hotelobjects_dev/application/controllers/Bookings.php on line 48
+[16-Sep-2015 20:52:06 Etc/GMT] PHP Fatal error:  Call to a member function display_admin() on a non-object in /home/thein6er/public_html/hotelobjects_dev/application/controllers/Bookings.php on line 48
+[16-Sep-2015 20:54:06 Etc/GMT] PHP Fatal error:  Call to a member function display_admin() on a non-object in /home/thein6er/public_html/hotelobjects_dev/application/controllers/Bookings.php on line 48
+[16-Sep-2015 20:54:09 Etc/GMT] PHP Fatal error:  Call to a member function display_admin() on a non-object in /home/thein6er/public_html/hotelobjects_dev/application/controllers/Bookings.php on line 48
+[16-Sep-2015 20:54:30 Etc/GMT] PHP Fatal error:  Call to a member function display_admin() on a non-object in /home/thein6er/public_html/hotelobjects_dev/application/controllers/Bookings.php on line 48
+[17-Sep-2015 03:05:22 Etc/GMT] PHP Fatal error:  Call to a member function display_admin() on a non-object in /home/thein6er/public_html/hotelobjects_dev/application/controllers/Bookings.php on line 48
+[17-Sep-2015 03:06:05 Etc/GMT] PHP Fatal error:  Call to a member function display_admin() on a non-object in /home/thein6er/public_html/hotelobjects_dev/application/controllers/Bookings.php on line 48
+[17-Sep-2015 03:06:57 Etc/GMT] PHP Fatal error:  Call to a member function display_admin() on a non-object in /home/thein6er/public_html/hotelobjects_dev/application/controllers/Bookings.php on line 48
+[17-Sep-2015 19:52:19 Etc/GMT] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/thein6er/public_html/hotelobjects_dev/application/controllers/Bookings.php on line 35
+[17-Sep-2015 19:58:59 Etc/GMT] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/thein6er/public_html/hotelobjects_dev/application/controllers/Bookings.php on line 32
+[17-Sep-2015 20:39:19 Etc/GMT] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/thein6er/public_html/hotelobjects_dev/application/controllers/Bookings.php on line 38
+[17-Sep-2015 20:39:22 Etc/GMT] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/thein6er/public_html/hotelobjects_dev/application/controllers/Bookings.php on line 38
+[17-Sep-2015 20:39:44 Etc/GMT] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/thein6er/public_html/hotelobjects_dev/application/controllers/Bookings.php on line 41
+[17-Sep-2015 20:39:49 Etc/GMT] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/thein6er/public_html/hotelobjects_dev/application/controllers/Bookings.php on line 41
+[22-Sep-2015 20:03:24 Etc/GMT] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/thein6er/public_html/hotelobjects_dev/application/controllers/Bookings.php on line 103
+[22-Sep-2015 20:03:25 Etc/GMT] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/thein6er/public_html/hotelobjects_dev/application/controllers/Bookings.php on line 103
+[22-Sep-2015 20:05:00 Etc/GMT] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/thein6er/public_html/hotelobjects_dev/application/controllers/Bookings.php on line 103

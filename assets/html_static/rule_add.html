@@ -1,0 +1,253 @@
+<div id="add_service_step2">
+    <div id="rule_list">
+        Here Comes the Rule Part
+    </div>
+
+    <div class="row">
+        <div class="col-md-12" style="margin-bottom:15px;">
+            <div class="col-md-4" style="width:230px;height:465px;background:rgba(160, 159, 159, 0.42);padding:5px; margin-bottom:20px;">
+
+
+
+                <select id="Master_cat" class="selectpicker"  data-hide-disabled="true" title="Master Category" data-live-search="true" onchange="master_catagory(this.value)">
+
+                    <!--<optgroup disabled="disabled" label="disabled">
+                      <option>Hidden</option>
+                    </optgroup>-->
+                    <option  value="" disabled selected> Master Category</option>
+                    <option  value="Genaral Category" > Genaral Category</option>
+                    <option  value="Guest"> Guest</option>
+                    <option  value="Booking"> Booking </option>
+                    <option  value="Unit"> Unit </option>
+                    <option  value="Event"> Event</option>
+
+
+                </select>
+
+
+
+
+            </div>
+            <div class="col-md-4" id="gn" style="width:230px;height:465px;background:rgba(160, 159, 159, 0.42);padding:5px;margin-left:20px;margin-bottom:20px; display:none;">
+
+
+
+                <select id="gen_cat" class="selectpicker"  data-hide-disabled="true" title="Genaral Category" data-live-search="true" onchange="open_oparetor()">
+
+                    <option  value="" disabled selected> Genaral Category</option>
+                    <option  value="Total Bill" > Total Bill</option>
+                    <option  value="date('Y-m-d')"> System Date</option>
+
+
+
+                </select>
+
+
+
+
+            </div>
+            <div class="col-md-4" id="guest"style="width:230px;height:465px;padding:5px;margin-left:20px;background:rgba(160, 159, 159, 0.42);margin-bottom:20px;display:none;">
+
+
+                <select name="s_guest" id="guest_cat" class="selectpicker"  data-hide-disabled="true" title="Guest" data-live-search="true" onchange="open_oparetor()">
+
+                    <!--<optgroup disabled="disabled" label="disabled">
+                      <option>Hidden</option>
+                    </optgroup>-->
+                    <option  value="" disabled selected> Guest</option>
+                    <option  value="g_name" > Guest name</option>
+                    <option  value="g_gender"> Guest gender</option>
+                    <option  value="g_age" > Guest age</option>
+                    <option  value="g_type"> Guest Type</option>
+                    <option  value="g_state" > Guest State</option>
+                    <option  value="g_vip=1"> VIP?</option>
+                    <option  value="g_preffered=1?" > Preferred?</option>
+                    <option  value="g_no_times"> No of times visited</option>
+                    <option  value="g_total_spending" > Total spending</option>
+                    <option  value="g_no_times=1"> New Guest?</option>
+                    <option  value="Global category"> Global category</option>
+
+
+
+                </select>
+
+
+
+
+
+
+            </div>
+            <div class="col-md-4" id="booking" style="width:230px;height:465px;background:rgba(160, 159, 159, 0.42);padding:5px;margin-left:20px;margin-bottom:20px;display:none;">
+
+
+                <select name="s_booking" id="booking_cat" class="selectpicker"  data-hide-disabled="true" title="Booking" data-live-search="true" onchange="open_oparetor()">
+
+                    <!--<optgroup disabled="disabled" label="disabled">
+                      <option>Hidden</option>
+                    </optgroup>-->
+                    <option  value="" disabled selected> Booking</option>
+                    <option  value="cust_from_date" > Booking start date</option>
+                    <option  value="cust_end_date"> Booking end date</option>
+                    <option  value="no_of_guest" > No of Guest</option>
+                    <option  value="no_of_guest >1"> Family?</option>
+                    <option  value="no_of_guest =1" > Individual?</option>
+                    <option  value="nature_visit"> Nature of visit</option>
+                    <option  value="booking_source" > Booking source</option>
+                    <option  value="stay_days"> No of stay days</option>
+                    <option  value="room_rent_total_amount" > Total Rent</option>
+                    <option  value="Global category"> Global category</option>
+                    <option  value="Weekend"> Weekend</option>
+
+
+
+                </select>
+
+
+
+
+
+            </div>
+            <div class="col-md-4" id="unit" style="width:230px;height:465px;background:rgba(160, 159, 159, 0.42);padding:5px;margin-left:20px;margin-bottom:20px;display:none">
+
+
+
+                <select name="s_unit" id="unit_cat" class="selectpicker"  data-hide-disabled="true" title="Unit" data-live-search="true" onchange="open_oparetor()">
+
+                    <!--<optgroup disabled="disabled" label="disabled">
+                      <option>Hidden</option>
+                    </optgroup>-->
+                    <option  value="" disabled selected> Unit</option>
+                    <option  value="room_no" > Room/ Unit no</option>
+                    <option  value="room_bed"> No of Bed</option>
+                    <option  value="floor_no" > Floor</option>
+                    <option  value="Room category"> Room category</option>
+                    <option  value="Global category" > Global category</option>
+
+
+
+
+                </select>
+
+
+
+            </div>
+            <div class="col-md-4" id="event" style="width:230px;height:465px;background:rgba(160, 159, 159, 0.42);padding:5px;margin-left:20px;margin-bottom:20px;display:none">
+
+
+
+
+                <select name="s_event" id="event_cat" class="selectpicker"  data-hide-disabled="true" title="Event" data-live-search="true" onchange="open_oparetor()">
+
+                    <option  value="" disabled selected> Event</option>
+                    <option  value="e_name" > Event Name</option>
+                    <option  value="e_from <=DATE() OR DATE() >=e_upto "> is Event?</option>
+
+
+
+
+
+                </select>
+
+
+            </div>
+
+
+
+            <div class="col-md-4" id="oparetor"style="width:230px;height:465px;background:rgba(160, 159, 159, 0.42);margin-left:20px;margin-bottom:20px;padding:5px;display:none;" >
+
+
+                <select name="s_operator" id="operator_cat" class="selectpicker"  data-hide-disabled="true" title="Oparetor" data-live-search="true" onchange= "open_value()">
+
+                    <!--<optgroup disabled="disabled" label="disabled">
+                      <option>Hidden</option>
+                    </optgroup>-->
+                    <option  value="" disabled selected> oparetor</option>
+                    <option  value="=" > =</option>
+                    <option  value=">" > > </option>
+                    <option  value="<" > < </option>
+                    <option  value="IN "> IN </option>
+                    <option  value="LIKE"> LIKE </option>
+                    <option  value="NOT EQUAL TO"> NOT EQUAL TO </option>
+                    <option  value="NOT IN"> NOT IN </option>
+                    <option  value="IS NULL"> IS NULL </option>
+                    <option  value="IS NOT NULL"> IS NOT NULL </option>
+                    <option  value="NOT LIKE"> NOT LIKE </option>
+
+                </select>
+
+
+            </div>
+            <div class="col-md-4" id="value_one" style="width:290px;height:465px;background:rgba(160, 159, 159, 0.42); margin-left:20px; margin-bottom:20px; padding-left:29px;padding-right:29px;padding-top:5px; display:none;" >
+
+
+
+                <div class="form-group">
+                    <!--<label class="control-label" style="font-weight:bold; color:white;">Value</label>-->
+                    <div class="">
+                        <input type="text" id="rule_value" class="form-control" name="s_value" placeholder="value" onkeypress="open_tgl_btn()"/>
+
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+            <div class="col-md-4"  id="value_two"style="width:290px;height:465px;background:rgba(160, 159, 159, 0.42); margin-left:20px; margin-bottom:20px; padding-left:29px;padding-right:29px;padding-top:5px; display:none;">
+
+
+
+                <div class="form-group">
+                    <!--<label class="control-label" style="font-weight:bold; color:white;">Value</label>-->
+                    <div class="">
+                        <input type="text" class="form-control" name=""  placeholder="value"/>
+
+                    </div>
+
+
+                </div>
+
+                <div class="form-group" style="margin-top:20px;">
+                    <!--<label class="control-label" style="font-weight:bold; color:white;">Value</label>-->
+                    <div class="">
+                        <input type="text" class="form-control" name=""  placeholder="value"/>
+
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+</div>
+
+<div class="clearfix"></div>
+
+<button class="btn blue  pull-right" onclick="append_div()" style="margin-right:10px; margin-bottom:10px;">
+    Add Another <i class=""></i>
+</button>
+<div class="clearfix"></div>
+
+<div id="tgl_btn" style="width:6%;border:1px solid rgba(160, 159, 159, 0.42);  margin: 0 auto; margin-top:5px;margin-bottom:10px; display:none;">
+    <input style=""  type="checkbox" checked data-toggle="toggle" data-on="And" data-off="or" data-onstyle="success" data-offstyle="danger">
+</div>
+
